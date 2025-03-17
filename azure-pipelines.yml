@@ -1,17 +1,21 @@
 trigger:
   - main
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 stages: 
-  - stage: build code
-    displayName: build
+  - stage: buildcode
+    displayName: 'buildcode'
     jobs:
-      - job: first job
-        displayName: first job
+      - job: firstjob
+        displayName: 'first job'
         steps:
-           - task: first step
-      - job: second job
+         - script: |
+              echo "hi"
+           
+      - job: secondjob
+        displayName: 'second job'
         steps:
-          - task: second task
+         - script: echo "susmitha"
+        
 
     
