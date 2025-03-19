@@ -12,10 +12,10 @@ stages:
          - script: |
               echo "hi"
            
-      - job: secondjob
-        displayName: 'second job'
-        steps:
-         - script: echo "susmitha"
+     # - job: secondjob
+      #  displayName: 'second job'
+     #   steps:
+     #    - script: echo "susmitha"
         
 
     
